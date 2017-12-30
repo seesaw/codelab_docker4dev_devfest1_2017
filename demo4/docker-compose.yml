@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: ./application
+    ports:
+      - "3000:3000"
+    command: rails new my_rails_app
+    volumes:
+      - ./application:/my_app
